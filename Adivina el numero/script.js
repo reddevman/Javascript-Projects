@@ -35,8 +35,10 @@ document.querySelector('.check').addEventListener('click', function () {
     // document.querySelector('.message').textContent = '😊 ¡Número Correcto';
     displayMessage('😊 ¡Número Correcto');
     document.querySelector('.number').textContent = secretNumber;
-    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('body').style.backgroundColor = '#1E90FF';
     document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.number').style.fontSize = '10rem';
+    document.querySelector('.number').style.color = '#DC143C';
 
     if (score > highScore) {
       highScore = score;
@@ -63,6 +65,8 @@ document.querySelector('.check').addEventListener('click', function () {
       // document.querySelector('.message').textContent = '😱 Perdiste el juego';
       displayMessage('😱 Perdiste el juego');
       document.querySelector('.number').textContent = secretNumber;
+      document.querySelector('.number').style.backgroundColor = '#DC143C';
+      document.querySelector('.number').style.color = '#FFFAF0';
       document.querySelector('header').style.borderBottom = '7px solid #DC143C';
       document.querySelector('.score').textContent = 0;
     }
@@ -109,4 +113,8 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.guess').value = '';
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
+  document.querySelector('.number').style.fontSize = '8rem';
+  document.querySelector('.number').style.backgroundColor = '#eee';
+  document.querySelector('.number').style.color = '#333';
+  document.querySelector('header').style.borderBottom = '7px solid #eee';
 });
