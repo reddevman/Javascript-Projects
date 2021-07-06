@@ -37,7 +37,7 @@ const init = function () {
   [player0Current, player0Score, player1Current, player1Score].forEach(function (element) {
     element.textContent = 0;
   });
-  // Se añade y quita las listas para resetear el resaltado de los bloques de color
+  // Se añade y quita las clases para resetear el resaltado de los bloques de color
   document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner');
   player0Block.classList.add('player--active');
   player1Block.classList.remove('player--active');
