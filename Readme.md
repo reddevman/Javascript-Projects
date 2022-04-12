@@ -6,7 +6,7 @@ En este repositorio público iré subiendo todos los proyectos y prácticas de J
 
 - Adivina el número
 - Tirada de dado
-- Modal Window
+- Ventana emergente (Modal Window)
 
 ## Javascript30
 
